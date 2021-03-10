@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: 'Gordita';
     background-image: url('../img/bg.png');
-    background-position: center;
+    background-position-y: 0;
     background-size: cover;
 }
 
@@ -46,6 +46,13 @@ body {
             -o-animation: fadeIn ease 1s;
             -ms-animation: fadeIn ease 1s;
         }
+    .lp-text, .lp-text-2 {
+        font-family: "Gordita Regular";
+        font-size: 1rem;
+    }
+    .lp-text-2 {
+        display: none;
+    }
 
     .countdown {
         display: flex;
@@ -61,20 +68,26 @@ body {
             color: #273588;
             margin-bottom: 0;
         }
+        .countdown span {
+            font-family: "Coolvetica Compressed Rg";
+            font-size: 1.5rem;
+        }
 
     .newsletter {
         width: 50%;
-        margin: 10px auto;
+        margin: 30px auto 0;
         text-align: center;
     }
         .newsletter span {
             font-size: 2rem;
             font-weight: 300;
+            font-family: "Gordita Regular";
         }
         .newsletter form {
             width: 100%;
             box-sizing: border-box;
             margin: 20px 0;
+            font-family: "Gordita Regular";
         }
         .newsletter form input {
             box-sizing: border-box;
@@ -85,16 +98,17 @@ body {
         }
             .newsletter input[type=text] {
                 width: 80%;
-                background: #f4f4f4;
+                background: #f2f3fc;
             }
-                .newsletter input[type=text]::placeholder {
-                    font-weight: 500;
+                .newsletter input::placeholder {
+                    font-weight: 600;
                 }
             .newsletter input[type=submit] {
                 width: 20%;
                 border: none;
                 background: #273588;
                 color: #fff;
+                font-weight: 600;
             }
     .footer {
         position: absolute;
@@ -102,40 +116,60 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
+        .footer p {
+            font-family: "Gordita Regular";
+        }
 
 @media screen and (max-width:1023px){
     .header {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
         .header img {
-            width: 150px;
+            width: 100px;
         }
     .main {
         height: auto;
         position: relative;
     }
+        .lp-text {
+            display: none;
+        }
+        .lp-text-2 {
+            display: block;
+            font-size: .9rem !important;
+        }
+        .c-cont {
+            position: relative;
+            order: 1;
+        }
         
         .lp-1 h1 {
             font-size: 2rem;
         }
         .countdown div:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 40px;
         }
         .countdown h1 {
-            font-size: 3rem;
+            font-size: 5rem;
         }
         .newsletter {
             width: 100%;
         }
             .newsletter span {
-                font-size: 1.1rem;
+                font-size: 1.5rem;
             }
             .newsletter .d-flex {
                 flex-direction: column;
             }
-            .newsletter form input {
+            .newsletter form input[type=text] {
                 width: 100% !important;
                 margin-bottom: 10px;
+                border: none;
+            }
+            .newsletter form input[type=submit] {
+                width: 200px;
+                border-radius: 3px;
+                margin: 0 auto;
             }
         .footer {
             position: relative;
@@ -149,7 +183,7 @@ body {
     @keyframes fadeIn {
         0% {
             opacity:0;
-            transform: translateY(300px);
+            transform: translateY(100px);
         }
         100% {
             opacity:1;
