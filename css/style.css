@@ -9,6 +9,7 @@ body {
     background-image: url('../img/bg.png');
     background-position-y: 0;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ==== custom styles ==== */
@@ -17,6 +18,7 @@ body {
 }
 .container {
     height: 100%;
+    overflow-x: hidden;
 }
     
 
@@ -36,16 +38,7 @@ body {
     .lp-1 h1 {
         font-size: 4rem;
         font-weight: 600;
-        display: none;
     }
-        .lp-1 h1.active {
-            display: block;
-            animation: fadeIn ease 1s;
-            -webkit-animation: fadeIn ease 1s;
-            -moz-animation: fadeIn ease 1s;
-            -o-animation: fadeIn ease 1s;
-            -ms-animation: fadeIn ease 1s;
-        }
     .lp-text, .lp-text-2 {
         font-family: "Gordita Regular";
         font-size: 1rem;
@@ -53,6 +46,16 @@ body {
     .lp-text-2 {
         display: none;
     }
+        .ml4 {
+            position: relative;
+        }
+            .ml4 .letters {
+                position: absolute;
+                top: -1.2em;
+                left: 0;
+                right: 0;
+                opacity: 0;
+            }
 
     .countdown {
         display: flex;
@@ -122,7 +125,7 @@ body {
 
 @media screen and (max-width:1023px){
     .header {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
         .header img {
             width: 100px;
@@ -144,7 +147,8 @@ body {
         }
         
         .lp-1 h1 {
-            font-size: 2rem;
+            font-size: 2.2rem;
+            text-align: center;
         }
         .countdown div:not(:last-child) {
             margin-right: 40px;
@@ -183,10 +187,8 @@ body {
     @keyframes fadeIn {
         0% {
             opacity:0;
-            transform: translateY(100px);
         }
         100% {
             opacity:1;
-            transform: translateY(0);
         }
     }
