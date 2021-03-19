@@ -9,7 +9,6 @@ body {
     background-image: url('../img/bg.png');
     background-position-y: 0;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* ==== custom styles ==== */
@@ -18,7 +17,10 @@ body {
 }
 .container {
     height: 100%;
-    overflow-x: hidden;
+}
+
+.typed-cursor {
+    display: none !important;
 }
     
 
@@ -36,7 +38,7 @@ body {
         top: 10%;
     }
     .lp-1 h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: 600;
     }
     .lp-text, .lp-text-2 {
@@ -63,17 +65,17 @@ body {
         color: #273588;
     }
         .countdown div:not(:last-child) {
-            margin-right: 50px;
+            margin-right: 45px;
         }
         .countdown h1 {
-            font-size: 8rem;
+            font-size: 12rem;
             font-family: "Coolvetica Compressed Rg";
             color: #273588;
             margin-bottom: 0;
         }
         .countdown span {
             font-family: "Coolvetica Compressed Rg";
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
 
     .newsletter {
@@ -123,6 +125,53 @@ body {
             font-family: "Gordita Regular";
         }
 
+    /* ==== feedback ==== */
+    .f-cont {
+        width: 70%;
+        margin: 0 auto;
+        font-family: "Gordita Regular";
+        text-align: center;
+        margin-top: 5%;
+    }
+        .t-1 {
+            font-size: 5rem;
+            font-weight: 800;
+        }
+        .t-2 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .f-s-t {
+            font-size: 1.3rem;
+            margin: 20px 0 0;
+        }
+        .share {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 50px 0 0;
+        }
+            .share a {
+                color: #273588;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 15px 30px;
+                border: 2px solid #273588;
+                border-radius: 8px;
+                transition: 0.4s;
+            }
+                .share a:hover {
+                    background: #273588;
+                    color: #fff;
+                    transition: 0.4s;
+                }
+                .share a:not(:last-child) {
+                    margin-right: 30px;
+                }
+                .whatsapp {
+                    display: none;
+                }
 @media screen and (max-width:1023px){
     .header {
         margin-bottom: 60px;
@@ -139,7 +188,7 @@ body {
         }
         .lp-text-2 {
             display: block;
-            font-size: .9rem !important;
+            font-size: .8rem !important;
         }
         .c-cont {
             position: relative;
@@ -147,7 +196,7 @@ body {
         }
         
         .lp-1 h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             text-align: center;
         }
         .countdown div:not(:last-child) {
@@ -160,7 +209,8 @@ body {
             width: 100%;
         }
             .newsletter span {
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-weight: 600;
             }
             .newsletter .d-flex {
                 flex-direction: column;
@@ -175,6 +225,41 @@ body {
                 border-radius: 3px;
                 margin: 0 auto;
             }
+
+        /* ==== feedback ==== */
+        .f-cont {
+            width: 95%;
+            margin: 0;
+        }
+            .t-1 {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+            .t-2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            .f-s-t {
+                font-size: .9rem;
+            }
+            .share {
+                margin: 30px 0 0;
+                flex-direction: column;
+                align-items: center;
+            }
+                .share a {
+                    padding: 10px;
+                    margin: 0 !important;
+                    margin-bottom: 20px !important;
+                    display: block;
+                    width: 250px;
+                }
+                .whatsapp {
+                    display: block;
+                }
+
+
+
         .footer {
             position: relative;
             text-align: center;

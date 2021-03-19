@@ -16,10 +16,17 @@ const x = setInterval(() => {
 
 }, 1000);
 
+var options = {
+    strings: ['We are coming ^1500 ', 'A n bo ^1500 ', 'Any na-abia ^1500 ', 'Zamu zo ^1500 ', 'We dey come ^1500 '],
+    typeSpeed: 90,
+    loop: true
+};
+
+var typed = new Typed('#typedele', options);
+
 //fade 
 // const lpText = document.querySelectorAll('.lp-1 h1');
 // let counter = 1;
-
 // const showText = setInterval(() => {
 //     lpText.forEach(text => {
 //         text.classList.remove('active');
@@ -51,67 +58,67 @@ const x = setInterval(() => {
 //     });
 
 
-var ml4 = {};
-ml4.opacityIn = [0,1];
-ml4.scaleIn = [0.2, 1];
-ml4.scaleOut = 3;
-ml4.durationIn = 800;
-ml4.durationOut = 600;
-ml4.delay = 500;
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml4 .letters-1',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-1',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-4',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-4',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 500,
-    delay: 500
-  });
-  
+//var ml4 = {};
+//ml4.opacityIn = [0,1];
+//ml4.scaleIn = [0.2, 1];
+//ml4.scaleOut = 3;
+//ml4.durationIn = 800;
+//ml4.durationOut = 600;
+//ml4.delay = 500;
+//
+//anime.timeline({loop: true})
+//  .add({
+//    targets: '.ml4 .letters-1',
+//    opacity: ml4.opacityIn,
+//    scale: ml4.scaleIn,
+//    duration: ml4.durationIn
+//  }).add({
+//    targets: '.ml4 .letters-1',
+//    opacity: 0,
+//    scale: ml4.scaleOut,
+//    duration: ml4.durationOut,
+//    easing: "easeInExpo",
+//    delay: ml4.delay
+//  }).add({
+//    targets: '.ml4 .letters-2',
+//    opacity: ml4.opacityIn,
+//    scale: ml4.scaleIn,
+//    duration: ml4.durationIn
+//  }).add({
+//    targets: '.ml4 .letters-2',
+//    opacity: 0,
+//    scale: ml4.scaleOut,
+//    duration: ml4.durationOut,
+//    easing: "easeInExpo",
+//    delay: ml4.delay
+//  }).add({
+//    targets: '.ml4 .letters-3',
+//    opacity: ml4.opacityIn,
+//    scale: ml4.scaleIn,
+//    duration: ml4.durationIn
+//  }).add({
+//    targets: '.ml4 .letters-3',
+//    opacity: 0,
+//    scale: ml4.scaleOut,
+//    duration: ml4.durationOut,
+//    easing: "easeInExpo",
+//    delay: ml4.delay
+//  }).add({
+//    targets: '.ml4 .letters-4',
+//    opacity: ml4.opacityIn,
+//    scale: ml4.scaleIn,
+//    duration: ml4.durationIn
+//  }).add({
+//    targets: '.ml4 .letters-4',
+//    opacity: 0,
+//    scale: ml4.scaleOut,
+//    duration: ml4.durationOut,
+//    easing: "easeInExpo",
+//    delay: ml4.delay
+//  }).add({
+//    targets: '.ml4',
+//    opacity: 0,
+//    duration: 500,
+//    delay: 500
+//  });
+//  

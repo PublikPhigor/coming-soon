@@ -26,11 +26,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="lp-1 ml4">
-                            <h1 class="text-brand letters letters-1">We are coming</h1>
-                            <h1 class="text-brand letters letters-2">A n bo</h1>
-                            <h1 class="text-brand letters letters-3">Any na-abia</h1>
-                            <h1 class="text-brand letters letters-4">Zamu zo</h1>
-                            <h1 class="text-brand letters letters-5">We dey come</h1>
+                            <h1 class="text-brand letters letters-1" id="typedele" style="opacity: 1 !important;"></h1>
                             <p class="mb-0 mt-3 p-0 lp-text">
                                 We pride ourselves in providing the industry leading truly unlimited downloads which is consistently available - We do not limit, restrict or throttle your internet speed irrespective of the data capacity you use. So, if you want a truly unlimited internet service, simply get a data plan from UNLIMITED.NG! 
                             </p>
@@ -64,10 +60,10 @@
         
                 <div class="newsletter">
                     <span class="text-brand">Be the first to know when we launch</span>
-                    <form>
+                    <form role="form" id="subscribe" autocomplete="off">
                         <div class="d-flex">
-                            <input type="text" placeholder="Enter your email here">
-                            <input type="submit" value="Subscribe">
+                            <input type="text" placeholder="Enter your email here" name="email">
+                            <input type="submit" value="Subscribe" id="sub-button">
                         </div>
                     </form>
                 </div>
@@ -79,6 +75,9 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="js/main.js"></script>
+    <script src="js/subscribe.js"></script>
 </body>
 </html>
